@@ -193,7 +193,7 @@ function evaluateAnswers(actionn) {
     const resultMap = {
         A: "The Main Character",
         B: "The Social Anchor",
-        C: "Ever Curious"
+        C: "The Ever Curious"
     };
 
     const resultText = resultMap[finalType] || "Unknown";
@@ -209,7 +209,7 @@ function evaluateAnswers(actionn) {
     } else if (finalType == 'C') {
         $('#resultimg1').attr('src', '../../static/front/assets/book.webp')
         // $('#resultimg2').attr('src', '../../static/front/assets/story2.jpg')
-        $('.title').text('Ever Curious')
+        $('.title').text('The Ever Curious')
         $('.copy').html('The one always asking, "What&apos;s new?" before anyone else does.')
     }
     const firstName = name.split(" ")[0];
