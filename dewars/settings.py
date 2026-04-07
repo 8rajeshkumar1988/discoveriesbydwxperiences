@@ -150,6 +150,6 @@ CORS_ALLOWED_ORIGINS = [
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
-        'LOCATION': '/tmp/django_cache',  # Or another directory with write permissions
+        'LOCATION': os.path.join(BASE_DIR, 'django_cache'),
     }
 }
