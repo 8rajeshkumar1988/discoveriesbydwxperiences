@@ -85,8 +85,8 @@ WSGI_APPLICATION = 'dewars.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        # 'ENGINE': 'mysql.connector.django',
+        # 'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         'NAME': 'discoveriesbydwxperiences_db',
         'USER': 'root',
         'PASSWORD': "",
