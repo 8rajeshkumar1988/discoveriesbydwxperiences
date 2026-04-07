@@ -46,9 +46,9 @@ class ParticipantResult(models.Model):
 
     OPTIONS = [
         ("", ""),
-        ("The Explorer", "The Explorer"),
-        ("The Socializer", "The Socializer"),
-        ("The Storyteller", "The Storyteller"),
+        ("The Main Character", "The Main Character"),
+        ("The Social Anchor", "The Social Anchor"),
+        ("Ever Curious", "Ever Curious"),
     ]
     card_name = models.CharField(
         max_length=20, default="", null=True, blank=False, choices=OPTIONS
