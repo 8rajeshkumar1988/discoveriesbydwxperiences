@@ -465,7 +465,7 @@ button {
     position: fixed;
     width: 100%;
     top: 0;
-    height: 100dvh;
+    height: 100%;
     background: url("./assets/backans.jpg");
     padding: 50px 7.5vw;
     display: grid;
@@ -552,8 +552,10 @@ button {
             margin-top: -3%;
         }
         width: auto;
-        height: calc(100vh - clamp(6.25rem, -6.8548rem + 16.129vw, 12.5rem));
+        // height: calc(100vh - clamp(6.25rem, -6.8548rem + 16.129vw, 12.5rem));
+        height: clamp(34rem, -4.0643rem + 44.5848vw, 49.4375rem);
         background: url("./assets/result_back.jpg");
+        background-color: #fff8ed;
         background-size: cover;
         aspect-ratio: 9/16;
         padding: clamp(1.5625rem, 2.2177rem + -0.8065vw, 1.25rem) 10px 10px;
@@ -562,13 +564,13 @@ button {
         align-items: center;
         .logo {
             width: 35%;
-            margin-bottom: -10%;
+            margin-bottom: -5%;
         }
         #resultimg1 {
             width: 85%;
         }
         p {
-            font-size: clamp(0.75rem, -0.0363rem + 0.9677vw, 1.125rem);
+            font-size: clamp(0.6875rem, -0.3912rem + 1.2635vw, 1.125rem);
             text-transform: uppercase;
             text-align: center;
             color: #8d3a26;
@@ -580,13 +582,13 @@ button {
         }
         .usernameRe,
         .title {
-            font-size: clamp(1.9375rem, 0.2339rem + 2.0968vw, 2.75rem);
+            font-size: clamp(1.75rem, -0.7157rem + 2.8881vw, 2.75rem);
             font-weight: 600;
             font-family: "Futura";
         }
         .copy {
             padding: 0 clamp(1.875rem, 0.5645rem + 1.6129vw, 2.5rem);
-            font-size: clamp(0.5rem, -0.1552rem + 0.8065vw, 0.8125rem);
+            font-size: clamp(0.5625rem, -0.0539rem + 0.722vw, 0.8125rem);
             text-transform: unset;
         }
     }
@@ -830,11 +832,11 @@ button {
             max-width: 350px;
             margin: 0 auto;
             p {
-                font-size: 16px;
+                font-size: 13px;
             }
             .title,
             .usernameRe {
-                font-size: 35px;
+                font-size: 28px;
             }
             .copy {
                 font-size: 8px;
@@ -871,6 +873,26 @@ button {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #personality {
+        #result {
+            max-width: 300px;
+            margin: 0 auto;
+            min-width: 250px;
+            p {
+                font-size: 11px;
+            }
+            .title,
+            .usernameRe {
+                font-size: 23px;
+            }
+            .copy {
+                font-size: 8px;
             }
         }
     }

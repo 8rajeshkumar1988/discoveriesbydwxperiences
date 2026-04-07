@@ -191,26 +191,26 @@ function evaluateAnswers(actionn) {
     }
 
     const resultMap = {
-        A: "The Explorer",
-        B: "The Socializer",
-        C: "The Storyteller"
+        A: "The Main Character",
+        B: "The Social Anchor",
+        C: "Ever Curious"
     };
 
     const resultText = resultMap[finalType] || "Unknown";
     if (finalType == 'A') {
-        $('#resultimg1').attr('src', '../../static/front/assets/expo.png')
+        $('#resultimg1').attr('src', '../../static/front/assets/glasses.webp')
         // $('#resultimg2').attr('src', '../../static/front/assets/expo2.jpg')
-        $('.title').text('The Explorer')
-        $('.copy').text('You live for hidden gems, backstreet food stalls, and offbeat adventures. Discovery isn’t just about travel; it’s about trying new flavors, cultures, and experiences wherever you go.')
+        $('.title').text('The Main Character')
+        $('.copy').text('The one everyone ends up watching, whether they mean to or not. Whatever they choose naturally becomes part of the moment.')
     } else if (finalType == 'B') {
-        $('#resultimg1').attr('src', '../../static/front/assets/social.png')
-        $('.title').text('The Socialiser')
-        $('.copy').text('From rooftop bars in Bangkok to whisky lounges in London, you thrive on energy, connections, and unforgettable moments. For you, whisky is best enjoyed with great company.')
+        $('#resultimg1').attr('src', '../../static/front/assets/glass.webp')
+        $('.title').text('The Social Anchor')
+        $('.copy').text('The one people settle around when the room feels scattered.')
     } else if (finalType == 'C') {
-        $('#resultimg1').attr('src', '../../static/front/assets/story.webp')
+        $('#resultimg1').attr('src', '../../static/front/assets/book.webp')
         // $('#resultimg2').attr('src', '../../static/front/assets/story2.jpg')
-        $('.title').text('The STORYTELLER')
-        $('.copy').text('You’re drawn to immersive experiences, sensory details, and unique storytelling. Your adventures are planned around exclusive events, rare finds and moments that feel cinematic.')
+        $('.title').text('Ever Curious')
+        $('.copy').html('The one always asking, "What&apos;s new?" before anyone else does.')
     }
     const firstName = name.split(" ")[0];
     $('.usernameRe').text(firstName)
